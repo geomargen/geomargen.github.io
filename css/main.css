@@ -2065,6 +2065,7 @@ hr {
 .geoportal-box {
   display: inline-block;
   padding: 10px 20px;
+  margin-bottom: 10px;	
   background-color: #4285F4; /* Color de fondo */
   color: white; /* Color del texto */
   border-radius: 5px; /* Bordes redondeados */
