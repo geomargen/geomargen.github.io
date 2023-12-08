@@ -40,13 +40,21 @@
 
 /* Body
 ---------------------------------------------------------------------- */
-body {
+/*body {
 	background: #0e1015;
 	font: 15px/30px "merriweather-regular", serif;
 	font-weight: normal;
 	color: #575859;
 }
-
+*/
+body {
+    background-image: url(images/fondo6.jpg);
+    background-repeat: repeat; /* o el valor que desees */
+    background-size: contain; /* o el tamaño adecuado */
+    font: 15px/30px "merriweather-regular", serif;
+    font-weight: normal;
+    color: #575859;
+}
 /* Links
 ---------------------------------------------------------------------- */
 a, a:visited {
