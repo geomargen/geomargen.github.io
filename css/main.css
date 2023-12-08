@@ -49,7 +49,7 @@
 */
 body {
     background-image: url(images/fondo6.jpg);
-    background-repeat: repeat; /* o el valor que desees */
+    background-repeat: no-repeat; /* o el valor que desees */
     background-size: contain; /* o el tamaño adecuado */
     font: 15px/30px "merriweather-regular", serif;
     font-weight: normal;
@@ -1733,7 +1733,7 @@ hr {
 /*  o. media Section
 /* =================================================================== */
 #media {
-	background: #a43b0a url(../images/fondo6.jpg) no-repeat bottom center fixed;
+	background-image: #a43b0a url(images/fondo6.jpg) no-repeat bottom center fixed;
 	-webkit-background-size: cover !important;
 	-moz-background-size: cover !important;
 	background-size: cover !important;
