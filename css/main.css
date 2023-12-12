@@ -2084,3 +2084,8 @@ hr {
   background-color: #3367D6; /* Cambia el color de fondo al pasar el ratón */
   cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
+
+.item-wrap img {
+    width: 300px; /* Tamaño deseado para las imágenes */
+    height: auto; /* Esto mantiene la proporción original */
+}
