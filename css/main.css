@@ -1492,6 +1492,7 @@ hr {
 	-ms-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;	
 }
+/*
 .item .item-wrap img {
 	vertical-align: bottom;
 	-moz-transition: all 0.3s ease-in-out;
@@ -1499,7 +1500,18 @@ hr {
 	-webkit-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+} 
+*/
+.item-wrap img {
+    width: calc(25% - 20px); /* 25% del ancho del contenedor (menos el margen entre imágenes) */
+    height: auto; /* Esto mantiene la proporción original */
+    margin: 10px; /* Margen entre las imágenes */
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box; /* Incluye el margen en el cálculo del tamaño */
+    /* Otros estilos necesarios para la presentación */
 }
+
 .item .item-wrap .portfolio-item-meta {
 	position: absolute;
 	top: 15px;
