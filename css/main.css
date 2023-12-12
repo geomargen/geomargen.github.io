@@ -1549,7 +1549,7 @@ hr {
 }
 
 .item .item-wrap img {
-    max-width: 300px; /* Tamaño máximo para las imágenes */
+    max-width: 100px; /* Tamaño máximo para las imágenes */
     height: auto; /* Esto mantiene la proporción original */
 }
 
