@@ -1548,10 +1548,7 @@ hr {
 	transform: scale(1.2);
 }
 
-.item .item-wrap img {
-    max-width: 100px; /* Tamaño máximo para las imágenes */
-    height: auto; /* Esto mantiene la proporción original */
-}
+
 
 /* 
 /*  m. team Section
