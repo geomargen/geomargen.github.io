@@ -1548,6 +1548,11 @@ hr {
 	transform: scale(1.2);
 }
 
+.item .item-wrap img {
+    max-width: 300px; /* Tamaño máximo para las imágenes */
+    height: auto; /* Esto mantiene la proporción original */
+}
+
 /* 
 /*  m. team Section
 /* =================================================================== */
@@ -2086,7 +2091,4 @@ hr {
 }
 
 
-/*.item-wrap img {
-    width: 300px; /* Tamaño deseado para las imágenes */
-/*    height: auto; /* Esto mantiene la proporción original */
-/* } */
+
