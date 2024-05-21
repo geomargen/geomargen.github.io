@@ -1450,6 +1450,10 @@ hr {
 /* 
 /* l. Portfolio Section
 /* =================================================================== */
+.custom-size {
+    width: 300px; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
 #portfolio {
 	background: white;
 	padding-top: 120px;
