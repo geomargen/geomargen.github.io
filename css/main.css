@@ -1507,8 +1507,10 @@ hr {
 
 .item .item-wrap img {
 	vertical-align: bottom;
+	width: 100%; /* Asegura que la imagen no exceda el contenedor */
+	height: auto; /* Mantiene la proporción de la imagen */
 	transition: all 0.3s ease-in-out;
-} 
+}
 
 .item .item-wrap .portfolio-item-meta {
 	position: absolute;
@@ -1568,7 +1570,6 @@ hr {
         flex: 1 1 calc(100% - 20px); /* Ajuste para móviles */
     }
 }
-
 
 
 /* 
