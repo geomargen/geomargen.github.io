@@ -1459,14 +1459,29 @@ hr {
 }
 #portfolio .row.items {
 	max-width: 1200px;
+	margin: 0 auto; /* Centra el contenido */
 }
 
 /* Portfolio wrapper */
 #portfolio-wrapper {
 	margin-top: 36px;
+	display: flex;
+	flex-wrap: wrap; /* Asegura que los items se ajusten al ancho disponible */
+	gap: 20px; /* Espacio entre items */
+	justify-content: space-around; /* Distribuye los items uniformemente */
 }
 
 /* portfolio items */
+.item {
+	flex: 1 1 calc(25% - 20px); /* Ajuste flexible para que se ajuste según el tamaño del contenedor */
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	transition: transform 0.2s;
+}
+
+.item:hover {
+	transform: scale(1.05);
+}
+
 .item .item-wrap {
 	overflow: hidden;
 	position: relative;
@@ -1474,6 +1489,7 @@ hr {
 .item .item-wrap a {
 	cursor: pointer;
 	color: white;
+	text-decoration: none; /* Elimina el subrayado de los enlaces */
 }
 .item .item-wrap .overlay {
 	background: #ed560e;
@@ -1486,22 +1502,13 @@ hr {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	opacity: 0;
 	zoom: 1;
-	-moz-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
-	-webkit-transition: opacity 0.3s ease-in-out;
-	-ms-transition: opacity 0.3s ease-in-out;
-	transition: opacity 0.3s ease-in-out;	
+	transition: opacity 0.3s ease-in-out;
 }
 
 .item .item-wrap img {
 	vertical-align: bottom;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 } 
-
 
 .item .item-wrap .portfolio-item-meta {
 	position: absolute;
@@ -1511,10 +1518,6 @@ hr {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	opacity: 0;
 	zoom: 1;
-	-moz-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
-	-webkit-transition: opacity 0.3s ease-in-out;
-	-ms-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
 }
 .item .item-wrap .portfolio-item-meta h5 {
@@ -1544,11 +1547,26 @@ hr {
 	zoom: 1;
 }
 .item:hover .item-wrap img {
-	-moz-transform: scale(1.2);
-	-o-transform: scale(1.2);
-	-webkit-transform: scale(1.2);
-	-ms-transform: scale(1.2);
 	transform: scale(1.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .item {
+        flex: 1 1 calc(33.333% - 20px); /* Ajuste para tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .item {
+        flex: 1 1 calc(50% - 20px); /* Ajuste para pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        flex: 1 1 calc(100% - 20px); /* Ajuste para móviles */
+    }
 }
 
 
