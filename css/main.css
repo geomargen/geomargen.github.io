@@ -1490,7 +1490,7 @@ hr {
 	overflow: hidden;
 	position: relative;
 	max-width: 300px; /* Tamaño máximo del contenedor */
-    	/*margin: 0 auto; /* Centrar horizontalmente */
+    	margin: 0 auto; /* Centrar horizontalmente */
 }
 .item .item-wrap a {
 	cursor: pointer;
