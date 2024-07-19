@@ -1,0 +1,38 @@
+name: Build and Deploy Jekyll Site
+
+on:
+  push:
+    branches:
+      - master  # ajusta el nombre de la rama si es necesario
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v2
+
+      - name: Configurar Ruby y Bundler
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7'  # ajusta la versión de Ruby según sea necesario
+
+      - name: Instalar dependencias de Jekyll y Build del sitio
+        run: |
+          gem install bundler
+          bundle install
+          bundle exec jekyll build
+
+      - name: Desplegar a GitHub Pages
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git checkout master  # asegúrate de estar en la rama correcta
+          git add --all
+          git commit -m "Build and deploy Jekyll site"
+          git push origin master
+
+      - name: Limpiar
+        run: |
+          bundle exec jekyll clean
