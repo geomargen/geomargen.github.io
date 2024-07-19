@@ -47,6 +47,34 @@
         font-family: raleway-bold, sans-serif;
         }
     </style>
+   <!-- Esto ordenada las publicaciones por año
+    ================================================== -->
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var publications = document.querySelectorAll('#about p');
+            var sortedPublications = Array.from(publications).sort(function(a, b) {
+                var yearA = extractYear(a.textContent);
+                var yearB = extractYear(b.textContent);
+                return yearB - yearA;  // Orden descendente (más reciente primero)
+            });
+
+            var container = document.querySelector('#about .twelve.columns');
+            sortedPublications.forEach(function(pub) {
+                container.appendChild(pub);
+            });
+        });
+
+        function extractYear(text) {
+            var yearRegex = /\[(\d{4})\]/;  // Expresión regular para extraer el año entre corchetes
+            var match = yearRegex.exec(text);
+            if (match) {
+                return parseInt(match[1]);
+            }
+            return 0;  // Si no se encuentra un año válido, devuelve 0
+        }
+    </script>
+
+    
 </head>
 
 <body class="homepage">
