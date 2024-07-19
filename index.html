@@ -314,7 +314,7 @@
 <!-- Prueba
 ================================================== -->
                 <div class="search-container">
-            <label for="search">Buscar publicación:</label>
+            <label for="search">Buscar:</label>
             <input type="text" id="search" placeholder="Ingrese término de búsqueda">
                  </div>
 <!-- Prueba
@@ -851,5 +851,27 @@
 <script src="js/backstretch.js"></script>
 <script src="js/waypoints.js"></script>
 <script src="js/main.js"></script>
+
+                           <!-- Script para filtrar publicaciones -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var searchInput = document.getElementById('search');
+            var publications = document.querySelectorAll('#about p');
+
+            searchInput.addEventListener('input', function() {
+                var searchTerm = searchInput.value.toLowerCase();
+
+                publications.forEach(function(pub) {
+                    var publicationText = pub.textContent.toLowerCase();
+                    if (publicationText.includes(searchTerm)) {
+                        pub.style.display = 'block';
+                    } else {
+                        pub.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+      <!-- Script para filtrar publicaciones -->                  
 </body>
 </html>
