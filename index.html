@@ -46,71 +46,90 @@
         h1,h2,h3,h4,h5,h6 {
         font-family: raleway-bold, sans-serif;
         }
+
 /* Contenedor de integrantes */
 #team-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); 
+  gap: 40px;
   margin-top: 20px;
+  justify-items: center; /* centrar octógonos */
 }
 
-/* Recuadro de cada miembro */
+/* Octógono */
 .bgrid.member {
-  border: 1px solid #007BFF;
-  border-radius: 20px;
-  padding: 20px;
-  background: #E6F7FF;
+  border: 3px solid #007BFF;   /* borde azul eléctrico */
+  background: #E6F7FF;         /* celeste claro */
+  width: 320px;
+  min-height: 420px;           /* alto fijo */
+  padding: 30px;
   text-align: center;
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
-  word-wrap: break-word; /* evita que los mails largos se salgan */
+  box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.3);
+  transition: transform 0.3s;
+  word-wrap: break-word;
   overflow-wrap: break-word;
+
+  /* Forma octogonal */
+  clip-path: polygon(
+    30% 0%, 70% 0%, 
+    100% 30%, 100% 70%, 
+    70% 100%, 30% 100%, 
+    0% 70%, 0% 30%
+  );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .bgrid.member:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
 }
 
-/* Imagen del integrante */
+/* Imagen dentro del octógono */
 .member-pic img {
-  max-width: 150px;
+  max-width: 140px;
   width: 100%;
   height: auto;
-  border-radius: 50%;
+  border-radius: 50%; /* la foto sigue circular */
   object-fit: cover;
   margin-bottom: 15px;
+  display: block;
 }
 
 /* Nombre */
 .member-name h3 {
-  margin: 8px 0 4px 0;
-  font-size: 1.2em;
+  margin: 10px 0 5px 0;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
-/* Cargo o sección */
+/* Cargo */
 .member-name span {
-  font-size: 0.9em;
-  color: #555;
+  font-size: 0.95em;
+  color: #333;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 /* Redes sociales */
 .member-social {
   list-style: none;
   padding: 0;
-  margin-top: 10px;
+  margin-top: auto;
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 15px;
   flex-wrap: wrap;
 }
 
 .member-social li a {
-  font-size: 1.3em;
-  color: #0077b5;
+  font-size: 1.4em;
+  color: #007BFF;
   text-decoration: none;
 }
+
 
 
     </style>
