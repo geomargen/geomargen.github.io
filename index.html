@@ -50,7 +50,7 @@
 /* Contenedor de integrantes cambie auto-fill por 3*/
 #team-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, minmax(100px, 1fr));  
+  grid-template-columns: repeat(3, 1fr);  
   gap: 5px;
   margin-top: 5px;
     justify-content: start;
@@ -140,9 +140,9 @@
 
 /* Foto de Miembro */
 .member-pic img {
-  max-width: 150px;
-  width: 100%;
-  height: auto;
+  max-height: 100px;
+  width: auto;
+  height: 100%;
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto 15px auto; /* centrada + espacio debajo */
@@ -153,6 +153,7 @@
   margin: 10px 0 5px 0;
   font-size: 1.4em;
   font-weight: bold;
+  line-height: 1.2;
 }
 
 /* Cargo o descripción corta */
