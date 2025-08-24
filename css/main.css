@@ -1679,8 +1679,8 @@ hr {
 /* Estilos de cada cuadro (miembro) */
 #team-wrapper .bgrid {
     padding: 18px; /* Espacio interno */
-    background: #ffffff; /* Fondo blanco */
-    border: 1px solid #e0e0e0; /* Borde sutil */
+    background: #87CEEB; /* celeste */
+    border: 2px solid #007FFF; /* azul eléctrico */
     border-radius: 12px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
     text-align: center; /* Centrar contenido */
