@@ -1658,8 +1658,8 @@ hr {
 #team-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 cuadros por fila en pantallas grandes */
-    gap: 24px; /* Espacio entre los cuadros */
-    margin: 24px 0; /* Margen superior e inferior */
+    gap: 5px; /* Espacio entre los cuadros */
+    margin: 5px 5px; /* Margen superior e inferior */
 }
 
 /* Media query para pantallas medianas (2 cuadros por fila) */
