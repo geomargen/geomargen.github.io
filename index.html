@@ -51,48 +51,32 @@
 #team-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); 
-  gap: 40px;
+  gap: 30px;
   margin-top: 20px;
-  justify-items: center; /* centrar octógonos */
 }
 
-/* Octógono */
+/* Cada recuadro */
 .bgrid.member {
-  border: 3px solid #007BFF;   /* borde azul eléctrico */
+  border: 2px solid #007BFF;   /* azul eléctrico */
+  border-radius: 20px;
+  padding: 25px;
   background: #E6F7FF;         /* celeste claro */
-  width: 320px;
-  min-height: 420px;           /* alto fijo */
-  padding: 30px;
   text-align: center;
-  box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.3);
-  transition: transform 0.3s;
+  box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.2);
+  transition: transform 0.2s;
   word-wrap: break-word;
   overflow-wrap: break-word;
-
-  /* Forma octogonal */
-  clip-path: polygon(
-    30% 0%, 70% 0%, 
-    100% 30%, 100% 70%, 
-    70% 100%, 30% 100%, 
-    0% 70%, 0% 30%
-  );
-
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  flex-direction: column;   /* todo en columna */
+  align-items: center;      /* centrado horizontal */
 }
 
-.bgrid.member:hover {
-  transform: scale(1.05);
-}
-
-/* Imagen dentro del octógono */
+/* Imagen centrada */
 .member-pic img {
-  max-width: 140px;
+  max-width: 180px;   /* más grande */
   width: 100%;
   height: auto;
-  border-radius: 50%; /* la foto sigue circular */
+  border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
   display: block;
@@ -101,23 +85,23 @@
 /* Nombre */
 .member-name h3 {
   margin: 10px 0 5px 0;
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: bold;
 }
 
-/* Cargo */
+/* Cargo o descripción corta */
 .member-name span {
-  font-size: 0.95em;
+  font-size: 1em;
   color: #333;
   display: block;
   margin-bottom: 12px;
 }
 
-/* Redes sociales */
+/* Redes sociales / íconos */
 .member-social {
   list-style: none;
   padding: 0;
-  margin-top: auto;
+  margin-top: auto;  /* baja los íconos hacia el final */
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -129,6 +113,7 @@
   color: #007BFF;
   text-decoration: none;
 }
+
 
 
 
