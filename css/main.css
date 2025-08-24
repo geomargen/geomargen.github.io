@@ -1657,7 +1657,7 @@ hr {
 /* Contenedor de los miembros del equipo */
 #team-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 cuadros por fila en pantallas grandes */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 5px; /* Espacio entre los cuadros */
     margin: 5px 5px; /* Margen superior e inferior */
 }
