@@ -46,6 +46,65 @@
         h1,h2,h3,h4,h5,h6 {
         font-family: raleway-bold, sans-serif;
         }
+        /* Contenedor de integrantes */
+#team-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px; /* Espacio entre recuadros */
+  margin-top: 20px;
+}
+
+/* Cada recuadro */
+.bgrid.member {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.bgrid.member:hover {
+  transform: translateY(-5px);
+}
+
+/* Foto de perfil circular */
+.member-pic img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Nombre y descripción */
+.member-name h3 {
+  margin: 8px 0 2px 0;
+  font-size: 1.2em;
+}
+
+.member-name span {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Redes sociales */
+.member-social {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.member-social li a {
+  font-size: 1.2em;
+  color: #0077b5;
+  text-decoration: none;
+}
+
     </style>
    <!-- Esto ordenada las publicaciones por año
     ================================================== -->
@@ -79,7 +138,7 @@
 
 <body class="homepage">
 <div id="preloader">
-    <div id="status"> <img src="images/loader.gif" height="60" width="60" alt="">
+    <div id="status"> <img src="images/loader.gif" height="80" width="80" alt="">
         <div class="loader">Loading...</div>
     </div>
 </div>
@@ -825,30 +884,6 @@
         <!-- /row --> 
     
     </div>
-  <!-- ############################################/-->
-    <!-- Contenedor de todos los integrantes -->
-<div class="team-container">
-  
-  <div class="member">
-    <div class="member-header">
-      <div class="member-pic">
-        <img src="images/pastor.jpeg" alt=""/>
-      </div>
-      <div class="member-name">
-        <h3>Ing. Irundo Pastor Costa</h3>
-        <span>Sección Geofísica</span>
-      </div>
-    </div>
-    <ul class="member-social">
-      <li>
-        <a href="https://www.linkedin.com/in/irundo-pastor-costa-39192868/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ar">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Aquí irían más "member" iguales para cada integrante -->
 
 </div>
   <!-- ############################################/-->  
