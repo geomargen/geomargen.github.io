@@ -1710,6 +1710,60 @@ hr {
     color: #f26522;
 }
 
+#team-wrapper2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px; /* Espacio entre los cuadros */
+    margin: 5px 5px; /* Margen superior e inferior */
+	justify-content: start;
+}
+
+/* Estilos de cada cuadro (miembro) */
+#team-wrapper2 .bgrid {
+    padding: 18px; /* Espacio interno */
+    background: #AFEEEE; /* celeste */
+    border: 2px solid #007FFF; /* azul eléctrico */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    text-align: center; /* Centrar contenido */
+}
+
+/* Estilos de la foto del miembro */
+#team-wrapper2 .member-pic img {
+    width: 100px; /* Tamaño de la foto */
+    height: 100px;
+    border-radius: 50%; /* Foto circular */
+    margin-bottom: 12px; /* Espacio debajo de la foto */
+}
+
+/* Estilos del nombre del miembro */
+#team-wrapper2 .member-name h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+/* Estilos del cargo o descripción */
+#team-wrapper2 .member-name span {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Estilos de las redes sociales */
+#team-wrapper2 .member-social {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+#team-wrapper2 .member-social li a {
+    color: #007BFF;
+    font-size: 18px;
+}
+
+#team-wrapper2 .member-social li a:hover {
+    color: #f26522;
+}
 
 /*  n. About Section
 /* =================================================================== */
