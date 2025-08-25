@@ -1657,29 +1657,15 @@ hr {
 /* Contenedor de los miembros del equipo */
 #team-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 5px; /* Espacio entre los cuadros */
     margin: 5px 5px; /* Margen superior e inferior */
-}
-
-/* Media query para pantallas medianas (2 cuadros por fila) */
-@media (max-width: 1024px) {
-    #team-wrapper {
-        grid-template-columns: repeat(2, 1fr); /* 2 cuadros por fila */
-    }
-}
-
-/* Media query para pantallas pequeñas (1 cuadro por fila) */
-@media (max-width: 768px) {
-    #team-wrapper {
-        grid-template-columns: repeat(1, 1fr); /* 1 cuadro por fila */
-    }
 }
 
 /* Estilos de cada cuadro (miembro) */
 #team-wrapper .bgrid {
     padding: 18px; /* Espacio interno */
-    background: #87CEEB; /* celeste */
+    background: #AFEEEE; /* celeste */
     border: 2px solid #007FFF; /* azul eléctrico */
     border-radius: 12px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
