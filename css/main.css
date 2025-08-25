@@ -1660,7 +1660,7 @@ hr {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 5px; /* Espacio entre los cuadros */
     margin: 5px 5px; /* Margen superior e inferior */
-	justify-content: flex-start;
+	justify-content: start;
 }
 
 /* Estilos de cada cuadro (miembro) */
