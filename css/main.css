@@ -2168,6 +2168,17 @@ hr {
   border-radius: 50%;
 }
 
+@media (max-width: 900px) {
+    .team-slide .member {
+        width: 48%; /* 2 por fila */
+    }
+}
+
+@media (max-width: 600px) {
+    .team-slide .member {
+        width: 100%; /* 1 por fila */
+    }
+}
 .team-slide {
     display: flex;
     justify-content: space-between;
