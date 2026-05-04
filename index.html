@@ -697,7 +697,12 @@
         </div>
         <div class="row about-content">
             <div class="twelve columns">
-                <div id="team-wrapper-past">
+               <div id="team-slider-past" class="flexslider">
+    <ul class="slides" id="team-slides-past"></ul>
+</div>
+
+<!-- contenedor oculto -->
+<div id="team-wrapper-past" style="display:none;">
                       <!-- /member --> 
                     <div class="bgrid member">
                         <div class="member-header">
@@ -926,6 +931,32 @@ $(window).load(function() {
     });
 
 });
+ // ===== ANTERIORES (nuevo) =====
+    var membersPast = $('#team-wrapper-past .member');
+    var slidesPast = $('#team-slides-past');
+
+    slidesPast.empty();
+
+    for (var i = 0; i < membersPast.length; i += 4) {
+        var slide = $('<li></li>');
+        var content = $('<div class="team-slide"></div>');
+
+        membersPast.slice(i, i + 4).each(function() {
+            content.append($(this));
+        });
+
+        slide.append(content);
+        slidesPast.append(slide);
+    }
+
+    $('#team-slider-past').flexslider({
+        animation: "slide",
+        controlNav: true,
+        directionNav: true,
+        slideshow: false
+    });
+
+});                            
 </script>
 </body>
 </html>
