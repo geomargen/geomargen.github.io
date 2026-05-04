@@ -535,7 +535,14 @@
         </div>
         <div class="row about-content">
             <div class="twelve columns">
-                <div id="team-wrapper" class="bgrid-whole mob-bgrid-whole group">
+                <div id="team-slider" class="flexslider">
+    <ul class="slides" id="team-slides">
+        <!-- JS va a llenar esto automáticamente -->
+    </ul>
+</div>
+
+<!-- contenedor oculto temporal -->
+<div id="team-wrapper" style="display:none;">
                     
                     
                     <div class="bgrid member">
@@ -885,6 +892,40 @@
             });
         });
     </script>
-      <!-- Script para filtrar publicaciones -->                  
+      <!-- Script para filtrar publicaciones -->  
+                        <script>
+$(window).load(function() {
+
+    // seleccionar miembros originales
+    var members = $('#team-wrapper .member');
+
+    var slidesContainer = $('#team-slides');
+    slidesContainer.empty();
+
+    // agrupar de a 4
+    for (var i = 0; i < members.length; i += 4) {
+
+        var slide = $('<li></li>');
+        var slideContent = $('<div class="team-slide"></div>');
+
+        members.slice(i, i + 4).each(function() {
+            slideContent.append($(this));
+        });
+
+        slide.append(slideContent);
+        slidesContainer.append(slide);
+    }
+
+    // inicializar flexslider
+    $('#team-slider').flexslider({
+        animation: "slide",
+        controlNav: true,
+        directionNav: true,
+        slideshow: false,
+        smoothHeight: true
+    });
+
+});
+</script>
 </body>
 </html>
