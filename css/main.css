@@ -2244,3 +2244,25 @@ hr {
     transform: none !important;
     display: inline-block;
 }
+
+/* CONTENEDOR */
+.flex-direction-nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0;
+}
+
+/* IMPORTANTE: matar floats */
+.flex-direction-nav li {
+    float: none !important;
+    display: inline-block !important;
+}
+
+/* BOTONES */
+.flex-direction-nav a {
+    position: static !important;
+    display: inline-block !important;
+    transform: none !important;
+    margin: 0 10px;
+}
