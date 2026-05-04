@@ -898,18 +898,16 @@
         });
     </script>
       <!-- Script para filtrar publicaciones -->  
-                        <script>
+<script>
 $(window).load(function() {
 
-    // seleccionar miembros originales
+    // ===== ACTUALES =====
     var members = $('#team-wrapper-current .member');
-
     var slidesContainer = $('#team-slides');
+
     slidesContainer.empty();
 
-    // agrupar de a 4
     for (var i = 0; i < members.length; i += 4) {
-
         var slide = $('<li></li>');
         var slideContent = $('<div class="team-slide"></div>');
 
@@ -921,17 +919,15 @@ $(window).load(function() {
         slidesContainer.append(slide);
     }
 
-    // inicializar flexslider
     $('#team-slider').flexslider({
         animation: "slide",
         controlNav: true,
         directionNav: true,
-        slideshow: false,
-        smoothHeight: true
+        slideshow: false
     });
 
-});
- // ===== ANTERIORES (nuevo) =====
+
+    // ===== ANTERIORES =====
     var membersPast = $('#team-wrapper-past .member');
     var slidesPast = $('#team-slides-past');
 
@@ -956,7 +952,7 @@ $(window).load(function() {
         slideshow: false
     });
 
-});                            
+});
 </script>
 </body>
 </html>
