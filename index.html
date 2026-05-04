@@ -920,11 +920,13 @@ $(window).load(function() {
     }
 
     $('#team-slider').flexslider({
-        animation: "slide",
-        controlNav: false,
-        directionNav: true,
-        slideshow: false
-    });
+    animation: "slide",
+    controlNav: false,
+    directionNav: true,
+    slideshow: false,
+    prevText: "❮",
+    nextText: "❯"
+});
 
 
     // ===== ANTERIORES =====
@@ -945,12 +947,14 @@ $(window).load(function() {
         slidesPast.append(slide);
     }
 
-    $('#team-slider-past').flexslider({
-        animation: "slide",
-        controlNav: false,
-        directionNav: true,
-        slideshow: false
-    });
+   $('#team-slider-past').flexslider({
+    animation: "slide",
+    controlNav: false,
+    directionNav: true,
+    slideshow: false,
+    prevText: "❮",
+    nextText: "❯"
+});
 
 });
 </script>
