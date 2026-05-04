@@ -2167,3 +2167,14 @@ hr {
   justify-content: center;
   border-radius: 50%;
 }
+
+.team-slide {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team-slide .member {
+    width: 23%;
+    margin-bottom: 20px;
+}
