@@ -542,7 +542,7 @@
 </div>
 
 <!-- contenedor oculto temporal -->
-<div id="team-wrapper" style="display:none;">
+<div id="team-wrapper-current" style="display:none;">
                     
                     
                     <div class="bgrid member">
@@ -697,7 +697,7 @@
         </div>
         <div class="row about-content">
             <div class="twelve columns">
-                <div id="team-wrapper" class="bgrid-whole mob-bgrid-whole group">
+                <div id="team-wrapper-past" style="display:none;">
                       <!-- /member --> 
                     <div class="bgrid member">
                         <div class="member-header">
@@ -897,7 +897,7 @@
 $(window).load(function() {
 
     // seleccionar miembros originales
-    var members = $('#team-wrapper .member');
+    var members = $('#team-wrapper-current .member');
 
     var slidesContainer = $('#team-slides');
     slidesContainer.empty();
