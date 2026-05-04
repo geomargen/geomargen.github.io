@@ -2221,3 +2221,6 @@ hr {
 .flex-direction-nav a:hover {
     background: rgba(0,0,0,0.8);
 }
+.flex-control-nav {
+    display: none !important;
+}
