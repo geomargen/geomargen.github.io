@@ -2224,3 +2224,23 @@ hr {
 .flex-control-nav {
     display: none !important;
 }
+
+/* Contenedor de botones */
+.flex-direction-nav {
+    position: static !important;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Cada botón (li) */
+.flex-direction-nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Botones (links) */
+.flex-direction-nav a {
+    position: static !important;
+    transform: none !important;
+    display: inline-block;
+}
