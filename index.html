@@ -907,31 +907,37 @@
 $(window).load(function() {
 
     // ===== ACTUALES =====
+       // ===== ACTUALES =====
     var members = $('#team-wrapper-current .member');
     var slidesContainer = $('#team-slides');
 
     slidesContainer.empty();
 
-    for (var i = 0; i < members.length; i += 4) {
+    // Cada miembro será una diapositiva independiente
+    members.each(function() {
         var slide = $('<li></li>');
-        var slideContent = $('<div class="team-slide"></div>');
-
-        members.slice(i, i + 4).each(function() {
-            slideContent.append($(this));
-        });
-
-        slide.append(slideContent);
+        slide.append($(this));
         slidesContainer.append(slide);
-    }
+    });
 
+    // Inicializar FlexSlider
     $('#team-slider').flexslider({
-    animation: "slide",
-    controlNav: false,
-    directionNav: true,
-    slideshow: false,
-    prevText: "❮",
-    nextText: "❯"
-});
+        animation: "slide",
+        animationLoop: true,
+        controlNav: false,
+        directionNav: true,
+        slideshow: false,
+
+        itemWidth: 250,
+        itemMargin: 10,
+
+        minItems: 1,
+        maxItems: 4,
+        move: 1,
+
+        prevText: "❮",
+        nextText: "❯"
+    });
 
 // ===== ANTERIORES =====
 var membersPast = $('#team-wrapper-past .member');
