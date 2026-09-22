@@ -2299,6 +2299,17 @@ hr {
     margin: 0 auto;
 }
 
+#team-slider-current .bgrid.member {
+    width: 250px !important;
+    height: 245px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    box-sizing: border-box;
+    padding: 10px !important;
+}
+
 /* REDES SOCIALES */
 #team-slider-current .member-social {
     margin-top: auto !important;
