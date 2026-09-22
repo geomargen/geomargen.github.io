@@ -2301,7 +2301,7 @@ hr {
 
 #team-slider-current .bgrid.member {
     width: 250px !important;
-    height: 245px !important;
+    height: 300px !important;
 
     display: flex !important;
     flex-direction: column !important;
@@ -2323,11 +2323,11 @@ hr {
     flex: 0 0 auto;
 }
 .slides > li {
-    height: 245px;
+    height: 300px;
 }
 
 .bgrid.member {
-    height: 245px;
+    height: 300px;
     display: flex;
     flex-direction: column;
 }
@@ -2337,17 +2337,17 @@ hr {
 }
 #team-slider .slides > li {
     width: 250px !important;
-    height: 245px !important;
-    min-height: 245px !important;
-    max-height: 245px !important;
+    height: 300px !important;
+    min-height: 300px !important;
+    max-height: 300px !important;
     overflow: hidden !important;
 }
 
 #team-slider .slides > li > .bgrid.member {
     width: 100% !important;
     height: 245px !important;
-    min-height: 245px !important;
-    max-height: 245px !important;
+    min-height: 300px !important;
+    max-height: 300px !important;
 
     display: flex !important;
     flex-direction: column !important;
