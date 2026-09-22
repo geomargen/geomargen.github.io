@@ -2266,3 +2266,23 @@ hr {
     transform: none !important;
     margin: 0 10px;
 }
+
+#team-slider-past .slides > li {
+    width: 25% !important;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+#team-slider-past .bgrid.member {
+    width: 100%;
+    float: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#team-slider-past .member-pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
