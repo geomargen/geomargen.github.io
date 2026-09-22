@@ -2266,7 +2266,7 @@ hr {
 #team-slider-past .slides > li {
     width: 250px !important;
     height: 245px !important;
-	padding: 8px !important;
+	padding: 10px !important;
     box-sizing: border-box;
     float: left;
     display: block;
