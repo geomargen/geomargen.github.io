@@ -2264,14 +2264,20 @@ hr {
    ========================================= */
 
 #team-slider-past .slides > li {
+    width: 250px !important;
+    height: 245px !important;
+	padding: 8px !important;
     box-sizing: border-box;
+    float: left;
+    display: block;
 }
 
 #team-slider-past .slides > li .bgrid.member {
-    width: 100% !important;
+    width: 250px !important;
+    height: 245px !important;
     float: none !important;
     margin: 0 !important;
-    padding: 0 10px !important;
+    padding: 10px !important;
     box-sizing: border-box;
 }
 
