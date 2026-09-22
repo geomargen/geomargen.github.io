@@ -2335,3 +2335,31 @@ hr {
 .member-social {
     margin-top: auto !important;
 }
+#team-slider .slides > li {
+    width: 250px !important;
+    height: 245px !important;
+    min-height: 245px !important;
+    max-height: 245px !important;
+    overflow: hidden !important;
+}
+
+#team-slider .slides > li > .bgrid.member {
+    width: 100% !important;
+    height: 245px !important;
+    min-height: 245px !important;
+    max-height: 245px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    overflow: hidden !important;
+}
+
+#team-slider .member-name {
+    height: 65px !important;
+    overflow: hidden !important;
+}
+
+#team-slider .member-social {
+    margin-top: auto !important;
+}
