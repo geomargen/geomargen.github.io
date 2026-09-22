@@ -2259,95 +2259,179 @@ hr {
     display: inline-block !important;
 }
 
-/* =========================================
+/* =========================================================
    MIEMBROS ANTERIORES
-   ========================================= */
+   ========================================================= */
 
+/* Contenedor del slider */
+#team-slider-past .flex-viewport {
+    height: 245px !important;
+}
+
+#team-slider-past .slides {
+    height: 245px !important;
+}
+
+/* Cada slide */
 #team-slider-past .slides > li {
     width: 250px !important;
     height: 245px !important;
-	padding: 10px !important;
-    box-sizing: border-box;
-    float: left;
-    display: block;
+    min-height: 245px !important;
+    max-height: 245px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    box-sizing: border-box !important;
+    overflow: hidden !important;
 }
-/* Tarjeta*/
-#team-slider-past .slides > li .bgrid.member {
+
+/* Tarjeta */
+#team-slider-past .slides > li > .bgrid.member {
     width: 250px !important;
     height: 245px !important;
-    float: none !important;
+    min-height: 245px !important;
+    max-height: 245px !important;
+
     margin: 0 !important;
     padding: 10px !important;
-    box-sizing: border-box;
-	display: flex !important;
-	flex-direction: column !important;
-	overflow: hidden;
+
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    overflow: hidden !important;
+}
+
+/* Cabecera */
+#team-slider-past .member-header {
+    width: 100% !important;
+    flex: 0 0 auto !important;
 }
 
 /* Foto */
 #team-slider-past .member-pic {
-    width: 100%;
+    width: 100% !important;
+    height: 94px !important;
+    min-height: 94px !important;
+    max-height: 94px !important;
+
     text-align: center;
+    flex: 0 0 94px !important;
 }
 
 #team-slider-past .member-pic img {
     width: 94px !important;
     height: 94px !important;
-    max-width: 100%;
+
+    min-width: 94px !important;
+    min-height: 94px !important;
+    max-width: 94px !important;
+    max-height: 94px !important;
+
     object-fit: cover;
     display: block;
     margin: 0 auto;
 }
 
-#team-slider-current .bgrid.member {
-    width: 250px !important;
-    height: 300px !important;
+/* Nombre y descripción */
+#team-slider-past .member-name {
+    width: 100% !important;
 
-    display: flex !important;
-    flex-direction: column !important;
+    height: 65px !important;
+    min-height: 65px !important;
+    max-height: 65px !important;
 
-    box-sizing: border-box;
-    padding: 10px !important;
+    overflow: hidden !important;
+
+    text-align: center;
+    flex: 0 0 65px !important;
 }
 
-/* REDES SOCIALES */
-#team-slider-current .member-social {
+#team-slider-past .member-name h3 {
+    margin: 5px 0 !important;
+    line-height: 1.2 !important;
+}
+
+#team-slider-past .member-name span {
+    display: block;
+    line-height: 1.25 !important;
+}
+
+/* Redes sociales */
+#team-slider-past .member-social {
+    width: 100% !important;
+
     margin-top: auto !important;
     margin-bottom: 0 !important;
 
-    padding-top: 10px !important;
+    padding: 10px 0 0 0 !important;
 
-    width: 100%;
-    text-align: center;
+    flex: 0 0 auto !important;
 
-    flex: 0 0 auto;
-}
-.slides > li {
-    height: 300px;
-}
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 
-.bgrid.member {
-    height: 300px;
-    display: flex;
-    flex-direction: column;
+    list-style: none !important;
 }
 
-.member-social {
-    margin-top: auto !important;
+#team-slider-past .member-social li {
+    margin: 0 4px !important;
+    padding: 0 !important;
+
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
 }
+
+#team-slider-past .member-social a {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   MIEMBROS ACTUALES
+   ========================================================= */
+
+#team-slider .flex-viewport {
+    height: 300px !important;
+}
+
+#team-slider .slides {
+    height: 300px !important;
+}
+
+/* Cada slide */
 #team-slider .slides > li {
     width: 250px !important;
+
     height: 300px !important;
     min-height: 300px !important;
     max-height: 300px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    box-sizing: border-box !important;
     overflow: hidden !important;
 }
 
+/* Tarjeta */
 #team-slider .slides > li > .bgrid.member {
-    width: 100% !important;
+    width: 250px !important;
+
     height: 300px !important;
     min-height: 300px !important;
     max-height: 300px !important;
+
+    margin: 0 !important;
+    padding: 10px !important;
+
+    box-sizing: border-box !important;
 
     display: flex !important;
     flex-direction: column !important;
@@ -2355,11 +2439,90 @@ hr {
     overflow: hidden !important;
 }
 
-#team-slider .member-name {
-    height: 65px !important;
-    overflow: hidden !important;
+/* Cabecera */
+#team-slider .member-header {
+    width: 100% !important;
+    flex: 0 0 auto !important;
 }
 
+/* Foto */
+#team-slider .member-pic {
+    width: 100% !important;
+    height: 94px !important;
+    min-height: 94px !important;
+    max-height: 94px !important;
+
+    text-align: center;
+    flex: 0 0 94px !important;
+}
+
+#team-slider .member-pic img {
+    width: 94px !important;
+    height: 94px !important;
+
+    min-width: 94px !important;
+    min-height: 94px !important;
+    max-width: 94px !important;
+    max-height: 94px !important;
+
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Nombre y descripción */
+#team-slider .member-name {
+    width: 100% !important;
+
+    height: 65px !important;
+    min-height: 65px !important;
+    max-height: 65px !important;
+
+    overflow: hidden !important;
+
+    text-align: center;
+    flex: 0 0 65px !important;
+}
+
+#team-slider .member-name h3 {
+    margin: 5px 0 !important;
+    line-height: 1.2 !important;
+}
+
+#team-slider .member-name span {
+    display: block;
+    line-height: 1.25 !important;
+}
+
+/* Redes sociales */
 #team-slider .member-social {
+    width: 100% !important;
+
     margin-top: auto !important;
+    margin-bottom: 0 !important;
+
+    padding: 10px 0 0 0 !important;
+
+    flex: 0 0 auto !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    list-style: none !important;
+}
+
+#team-slider .member-social li {
+    margin: 0 4px !important;
+    padding: 0 !important;
+
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+#team-slider .member-social a {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
 }
