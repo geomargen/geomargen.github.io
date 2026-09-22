@@ -2259,7 +2259,9 @@ hr {
     display: inline-block !important;
 }
 
-/* ===== SLIDER MIEMBROS ANTERIORES ===== */
+/* =========================================
+   MIEMBROS ANTERIORES
+   ========================================= */
 
 #team-slider-past .slides > li {
     box-sizing: border-box;
@@ -2273,12 +2275,17 @@ hr {
     box-sizing: border-box;
 }
 
+/* Foto */
 #team-slider-past .member-pic {
     width: 100%;
+    text-align: center;
 }
 
 #team-slider-past .member-pic img {
-    width: 100%;
-    height: auto;
+    width: 128px !important;
+    height: 128px !important;
+    max-width: 100%;
+    object-fit: cover;
     display: block;
+    margin: 0 auto;
 }
