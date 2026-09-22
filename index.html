@@ -906,39 +906,37 @@
 <script>
 $(window).load(function() {
 
-    // ===== ACTUALES =====
-       // ===== ACTUALES =====
-    var members = $('#team-wrapper-current .member');
-    var slidesContainer = $('#team-slides');
+// ===== ACTUALES =====
+var members = $('#team-wrapper-current .member');
+var slidesContainer = $('#team-slides');
 
-    slidesContainer.empty();
+slidesContainer.empty();
 
-    // Cada miembro será una diapositiva independiente
-    members.each(function() {
-        var slide = $('<li></li>');
-        slide.append($(this));
-        slidesContainer.append(slide);
-    });
+// Cada miembro es un slide independiente
+members.each(function() {
+    var slide = $('<li></li>');
+    slide.append($(this).clone());
+    slidesContainer.append(slide);
+});
 
-    // Inicializar FlexSlider
-    $('#team-slider').flexslider({
-        animation: "slide",
-        animationLoop: true,
-        controlNav: false,
-        directionNav: true,
-        slideshow: false,
+// Inicializar FlexSlider
+$('#team-slider').flexslider({
+    animation: "slide",
+    animationLoop: true,
+    controlNav: false,
+    directionNav: true,
+    slideshow: false,
 
-        itemWidth: 250,
-        itemMargin: 10,
+    itemWidth: 250,
+    itemMargin: 20,
 
-        minItems: 1,
-        maxItems: 4,
-        move: 1,
+    minItems: 1,
+    maxItems: 4,
+    move: 1,
 
-        prevText: "❮",
-        nextText: "❯"
-    });
-
+    prevText: "❮",
+    nextText: "❯"
+});
 // ===== ANTERIORES =====
 var membersPast = $('#team-wrapper-past .member');
 var slidesPast = $('#team-slides-past');
