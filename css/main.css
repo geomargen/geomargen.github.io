@@ -2396,7 +2396,7 @@ hr {
 ```css
 /* =========================================================
    MIEMBROS ACTUALES
-   TARJETA: 250 px × 400 px
+   TARJETA: 250 px × 350 px
    ========================================================= */
 
 /* ---------------------------------------------------------
@@ -2404,17 +2404,17 @@ hr {
    --------------------------------------------------------- */
 
 #team-slider {
-    height: 400px !important;
+    height: 350px !important;
 }
 
 #team-slider .flex-viewport {
-    height: 400px !important;
-    max-height: 400px !important;
+    height: 350px !important;
+    max-height: 350px !important;
 }
 
 #team-slider .slides {
-    height: 400px !important;
-    max-height: 400px !important;
+    height: 350px !important;
+    max-height: 350px !important;
 }
 
 
@@ -2425,9 +2425,9 @@ hr {
 #team-slider .slides > li {
     width: 250px !important;
 
-    height: 400px !important;
-    min-height: 400px !important;
-    max-height: 400px !important;
+    height: 350px !important;
+    min-height: 350px !important;
+    max-height: 350px !important;
 
     padding: 0 !important;
     margin: 0 !important;
@@ -2445,9 +2445,9 @@ hr {
 #team-slider .slides > li > .bgrid.member {
     width: 250px !important;
 
-    height: 400px !important;
-    min-height: 400px !important;
-    max-height: 400px !important;
+    height: 350px !important;
+    min-height: 350px !important;
+    max-height: 350px !important;
 
     margin: 0 !important;
     padding: 10px !important;
