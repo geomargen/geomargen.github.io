@@ -2259,26 +2259,22 @@ hr {
     display: inline-block !important;
 }
 
-/* BOTONES */
-.flex-direction-nav a {
-    position: static !important;
-    display: inline-block !important;
-    transform: none !important;
-    margin: 0 10px;
-}
+/* ===== SLIDER MIEMBROS ANTERIORES ===== */
 
 #team-slider-past .slides > li {
-    width: 25% !important;
-    padding: 0 15px;
     box-sizing: border-box;
 }
 
-#team-slider-past .bgrid.member {
-    width: 100%;
-    float: none;
-    margin: 0;
-    padding: 0;
+#team-slider-past .slides > li .bgrid.member {
+    width: 100% !important;
+    float: none !important;
+    margin: 0 !important;
+    padding: 0 10px !important;
     box-sizing: border-box;
+}
+
+#team-slider-past .member-pic {
+    width: 100%;
 }
 
 #team-slider-past .member-pic img {
