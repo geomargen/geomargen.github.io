@@ -2398,20 +2398,20 @@ hr {
    ========================================================= */
 
 #team-slider .flex-viewport {
-    height: 300px !important;
+    height: 400px !important;
 }
 
 #team-slider .slides {
-    height: 300px !important;
+    height: 400px !important;
 }
 
 /* Cada slide */
 #team-slider .slides > li {
     width: 250px !important;
 
-    height: 300px !important;
-    min-height: 300px !important;
-    max-height: 300px !important;
+    height: 400px !important;
+    min-height: 400px !important;
+    max-height: 400px !important;
 
     padding: 0 !important;
     margin: 0 !important;
@@ -2424,9 +2424,9 @@ hr {
 #team-slider .slides > li > .bgrid.member {
     width: 250px !important;
 
-    height: 300px !important;
-    min-height: 300px !important;
-    max-height: 300px !important;
+    height: 400px !important;
+    min-height: 400px !important;
+    max-height: 400px !important;
 
     margin: 0 !important;
     padding: 10px !important;
