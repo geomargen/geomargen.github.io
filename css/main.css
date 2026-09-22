@@ -2393,19 +2393,35 @@ hr {
 }
 
 
+```css
 /* =========================================================
    MIEMBROS ACTUALES
+   TARJETA: 250 px × 400 px
    ========================================================= */
+
+/* ---------------------------------------------------------
+   CONTENEDOR FLEXSLIDER
+   --------------------------------------------------------- */
+
+#team-slider {
+    height: 400px !important;
+}
 
 #team-slider .flex-viewport {
     height: 400px !important;
+    max-height: 400px !important;
 }
 
 #team-slider .slides {
     height: 400px !important;
+    max-height: 400px !important;
 }
 
-/* Cada slide */
+
+/* ---------------------------------------------------------
+   CADA SLIDE
+   --------------------------------------------------------- */
+
 #team-slider .slides > li {
     width: 250px !important;
 
@@ -2417,10 +2433,15 @@ hr {
     margin: 0 !important;
 
     box-sizing: border-box !important;
+
     overflow: hidden !important;
 }
 
-/* Tarjeta */
+
+/* ---------------------------------------------------------
+   TARJETA
+   --------------------------------------------------------- */
+
 #team-slider .slides > li > .bgrid.member {
     width: 250px !important;
 
@@ -2439,21 +2460,35 @@ hr {
     overflow: hidden !important;
 }
 
-/* Cabecera */
+
+/* ---------------------------------------------------------
+   CABECERA
+   --------------------------------------------------------- */
+
 #team-slider .member-header {
     width: 100% !important;
+
     flex: 0 0 auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
 }
 
-/* Foto */
+
+/* ---------------------------------------------------------
+   FOTO
+   --------------------------------------------------------- */
+
 #team-slider .member-pic {
     width: 100% !important;
+
     height: 94px !important;
     min-height: 94px !important;
     max-height: 94px !important;
 
-    text-align: center;
     flex: 0 0 94px !important;
+
+    text-align: center !important;
 }
 
 #team-slider .member-pic img {
@@ -2462,39 +2497,53 @@ hr {
 
     min-width: 94px !important;
     min-height: 94px !important;
+
     max-width: 94px !important;
     max-height: 94px !important;
 
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
+    object-fit: cover !important;
+
+    display: block !important;
+    margin: 0 auto !important;
 }
 
-/* Nombre y descripción */
+
+/* ---------------------------------------------------------
+   NOMBRE Y DESCRIPCIÓN
+   --------------------------------------------------------- */
+
 #team-slider .member-name {
     width: 100% !important;
 
-    height: 65px !important;
-    min-height: 65px !important;
-    max-height: 65px !important;
+    height: 80px !important;
+    min-height: 80px !important;
+    max-height: 80px !important;
+
+    flex: 0 0 80px !important;
 
     overflow: hidden !important;
 
-    text-align: center;
-    flex: 0 0 65px !important;
+    text-align: center !important;
 }
 
 #team-slider .member-name h3 {
-    margin: 5px 0 !important;
+    margin: 8px 0 6px 0 !important;
+
     line-height: 1.2 !important;
 }
 
 #team-slider .member-name span {
-    display: block;
+    display: block !important;
+
     line-height: 1.25 !important;
 }
 
-/* Redes sociales */
+
+/* ---------------------------------------------------------
+   REDES SOCIALES
+   SIEMPRE AL FINAL DE LA TARJETA
+   --------------------------------------------------------- */
+
 #team-slider .member-social {
     width: 100% !important;
 
@@ -2506,6 +2555,7 @@ hr {
     flex: 0 0 auto !important;
 
     display: flex !important;
+
     justify-content: center !important;
     align-items: center !important;
 
@@ -2517,12 +2567,33 @@ hr {
     padding: 0 !important;
 
     display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
+
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 #team-slider .member-social a {
     display: flex !important;
-    align-items: center;
-    justify-content: center;
+
+    align-items: center !important;
+    justify-content: center !important;
 }
+
+
+/* ---------------------------------------------------------
+   ICONO ORCID / IMÁGENES DE REDES
+   --------------------------------------------------------- */
+
+#team-slider .member-social img {
+    width: 16px !important;
+    height: 16px !important;
+
+    min-width: 16px !important;
+    min-height: 16px !important;
+
+    max-width: 16px !important;
+    max-height: 16px !important;
+
+    object-fit: contain !important;
+}
+```
