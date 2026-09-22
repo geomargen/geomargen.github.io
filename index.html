@@ -939,13 +939,9 @@ var slidesPast = $('#team-slides-past');
 
 slidesPast.empty();
 
-// Cada integrante es un slide
 membersPast.each(function() {
     var slide = $('<li></li>');
-    var content = $('<div class="team-slide"></div>');
-
-    content.append($(this));
-    slide.append(content);
+    slide.append($(this));
     slidesPast.append(slide);
 });
 
@@ -956,13 +952,8 @@ $('#team-slider-past').flexslider({
     slideshow: false,
     prevText: "❮",
     nextText: "❯",
-    itemWidth: 250,
-    itemMargin: 20,
-    minItems: 4,
-    maxItems: 4,
     move: 1
 });
-
 
 });
 </script>
