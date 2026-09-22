@@ -933,33 +933,36 @@ $(window).load(function() {
     nextText: "❯"
 });
 
+// ===== ANTERIORES =====
+var membersPast = $('#team-wrapper-past .member');
+var slidesPast = $('#team-slides-past');
 
-    // ===== ANTERIORES =====
-    var membersPast = $('#team-wrapper-past .member');
-    var slidesPast = $('#team-slides-past');
+slidesPast.empty();
 
-    slidesPast.empty();
+// Cada integrante es un slide
+membersPast.each(function() {
+    var slide = $('<li></li>');
+    var content = $('<div class="team-slide"></div>');
 
-    for (var i = 0; i < membersPast.length; i += 4) {
-        var slide = $('<li></li>');
-        var content = $('<div class="team-slide"></div>');
+    content.append($(this));
+    slide.append(content);
+    slidesPast.append(slide);
+});
 
-        membersPast.slice(i, i + 4).each(function() {
-            content.append($(this));
-        });
-
-        slide.append(content);
-        slidesPast.append(slide);
-    }
-
-   $('#team-slider-past').flexslider({
+$('#team-slider-past').flexslider({
     animation: "slide",
     controlNav: false,
     directionNav: true,
     slideshow: false,
     prevText: "❮",
-    nextText: "❯"
+    nextText: "❯",
+    itemWidth: 250,
+    itemMargin: 20,
+    minItems: 4,
+    maxItems: 4,
+    move: 1
 });
+
 
 });
 </script>
