@@ -2322,3 +2322,16 @@ hr {
 
     flex: 0 0 auto;
 }
+.slides > li {
+    height: 245px;
+}
+
+.bgrid.member {
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+}
+
+.member-social {
+    margin-top: auto !important;
+}
