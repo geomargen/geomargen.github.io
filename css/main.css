@@ -2271,7 +2271,7 @@ hr {
     float: left;
     display: block;
 }
-
+/* Tarjeta*/
 #team-slider-past .slides > li .bgrid.member {
     width: 250px !important;
     height: 245px !important;
@@ -2279,6 +2279,9 @@ hr {
     margin: 0 !important;
     padding: 10px !important;
     box-sizing: border-box;
+	display: flex !important;
+	flex-direction: column !important;
+	overflow: hidden;
 }
 
 /* Foto */
@@ -2294,4 +2297,17 @@ hr {
     object-fit: cover;
     display: block;
     margin: 0 auto;
+}
+
+/* REDES SOCIALES */
+#team-slider-current .member-social {
+    margin-top: auto !important;
+    margin-bottom: 0 !important;
+
+    padding-top: 10px !important;
+
+    width: 100%;
+    text-align: center;
+
+    flex: 0 0 auto;
 }
