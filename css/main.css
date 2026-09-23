@@ -2445,9 +2445,9 @@ hr {
 #team-slider .slides > li > .bgrid.member {
     width: 250px !important;
 
-    height: 350px !important;
-    min-height: 350px !important;
-    max-height: 350px !important;
+    height: 300px !important;
+    min-height: 300px !important;
+    max-height: 300px !important;
 
     margin: 0 !important;
     padding: 10px !important;
